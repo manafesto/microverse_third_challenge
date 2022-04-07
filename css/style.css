@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    font-weight: 700;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    background: url(https://st3.depositphotos.com/2793495/31878/i/1600/depositphotos_318788230-stock-photo-creative-people-working-in-the.jpg);
+    background-size: cover;
+    z-index: -1;
+    /* Keep the background behind the content */
+    height: 20%;
+    width: 20%;
+    /* Using Glen Maddern's trick /via @mente */
+
+    /* don't forget to use the prefixes you need */
+    transform: scale(15);
+    filter: blur(1px);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#survey-form {
+    border: 2px solid white;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+
+}
+
+input {
+    margin: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    width: 100%;
+    color: #888;
+}
+
+input[type=submit] {
+    background-color: #5979d1;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+
+}
+
+p {
+    margin: 10px 20px 0px 0px;
+}
+
+#dropdown {
+    margin-left: 10px;
+}
